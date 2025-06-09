@@ -1,3 +1,4 @@
+"use client";
 const startBtn = document.getElementById("start");
 const endBtn = document.getElementById("stop");
 const restartBtn = document.getElementById("reset");
@@ -6,16 +7,18 @@ const restartBtn = document.getElementById("reset");
 let minute = 0;
 let second = 0;
 let count = 0;
+
+
 startBtn.addEventListener('click', function () {
-    timer = true;
+    let timer = true;
     stopWatch();
     console.log(second);
 })
 endBtn.addEventListener("click", function () {
-    timer = false;
+    let timer = false;
 })
 restartBtn.addEventListener("click", function (){
-    timer = false;
+    let timer = false;
     minute = 0;
     second = 0;
     document.getElementById("minutes").innerHTML = "00";
