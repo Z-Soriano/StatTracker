@@ -10,15 +10,15 @@ let count = 0;
 
 
 startBtn.addEventListener('click', function () {
-    let timer = true;
+    timer = true;
     stopWatch();
     console.log(second);
 })
 endBtn.addEventListener("click", function () {
-    let timer = false;
+    timer = false;
 })
 restartBtn.addEventListener("click", function (){
-    let timer = false;
+    timer = false;
     minute = 0;
     second = 0;
     document.getElementById("minutes").innerHTML = "00";
